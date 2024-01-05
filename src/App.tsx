@@ -1,18 +1,16 @@
 import * as React from 'react';
 
 import './App.css';
-import { useFetch } from './use-fetch';
+import NewComponent from './components/new-component';
+import { Philosopher } from './components/philosopher';
+import { HeavyComponent } from './heavy-component';
 
 function App() {
-	console.log('App renderizando');
-	const { data } = useFetch({ url: './server/plato.json' });
-
 	return (
 		<>
-			<div>
-				<h1>O filósofo mais importante de todos é</h1>
-				<div>{JSON.stringify(data?.name)}</div>
-			</div>
+			<Philosopher />
+			<NewComponent />
+			<HeavyComponent />
 		</>
 	);
 }

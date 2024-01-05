@@ -1,0 +1,2 @@
+'./server/plato.json'
+'./server/aristotle.json';
